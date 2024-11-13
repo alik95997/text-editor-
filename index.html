@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="toolbar">
+              
+            <div class=" tool-btn">
+                <button onclick="alignLeft()"><i class="fa-solid fa-align-left"></i></button>
+                <button onclick="alignCenter()"><i class="fa-solid fa-align-center"></i></button>
+                <button onclick="alignRight()"><i class="fa-solid fa-align-right"></i></button>
+                <button onclick="alignJustify()"><i class="fa-solid fa-align-justify"></i></button>
+                <button onclick="noAlign()">
+                    <div class="align-slash-icon">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="slash"></div>
+                    </div>
+                </button>
+            </div>
+            <div class="tool-btn">
+                <button onclick="bold()"><i class="fa-solid fa-bold"></i></button>
+                <button onclick="italic()"><i class="fa-solid fa-italic"></i></button>
+                <button onclick="underline()"><i class="fa-solid fa-underline"></i></button>
+                <button onclick="strike()"><i class="fa-solid fa-strikethrough"></i></button>
+                <button onclick="superScript()"><i class="fa-solid fa-superscript"></i></button>
+                <button onclick="subScript()"><i class="fa-solid fa-subscript"></i></button>
+                <button onclick="unorderlist()"><box-icon name='list-ul'></box-icon></button>
+                <button onclick="orerderlist()"><box-icon name='list-ol'></box-icon></button>
+            </div>
+            <div class="tool-btn">
+                <input type="color" id="colorPicker" onchange="colorChange()">
+            </div>
+            <!-- <div class="previewTheFontSize">
+                <button onclick="fontDecrease()"><i class="fa-solid fa-minus"></i></button>
+                <button id="previewFontSize">16</button>
+                <button onclick="fontIncrease()"><i class="fa-solid fa-plus"></i></button> -->
+            <!-- </div> -->
+            <div class="tool-btn ">
+                <select name="" id="selectFontSize" onchange="fontPT()">
+                    <option value="14">14px</option>
+                    <option value="18">18px</option>
+                    <option value="24">24px</option>
+                    <option value="32">32px</option>
+                    <option value="48">48px</option>
+                </select>
+            </div>
+            <div class="undoredo">
+                <button onclick="undo()"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+                <button onclick="redo()"><i class="fa-solid fa-rotate-right"></i></button>
+            </div>      
+        </div>
+
+
+
+        <div id="edit" contenteditable="true" class="editable"></div>
+    </div>
+
+</body>
+<script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"
+    integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</html>

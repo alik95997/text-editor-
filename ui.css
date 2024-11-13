@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #338cf4
+}
+
+
+
+.align-slash-icon {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Lines for alignment */
+.line {
+    width: 80%;
+    height: 2px;
+    background-color: black;
+}
+79
+/* Slash line */
+.slash {
+    position: absolute;
+    width: 2px;
+    height: 120%;
+    background-color: black;
+    top: -5%;
+    left: 50%;
+    transform: rotate(45deg);
+}
+
+
